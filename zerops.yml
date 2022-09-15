@@ -24,20 +24,14 @@ nodejs0:
 
     # select which files / folders to deploy
     # after the build succesfully finished
-    # `~` can be used to mark starting point
-    # of deploy path, this example would deploy
-    # files in folder dist without the folder
-    # itself, either way make sure your nginx
-    # config points to the correct folder
-    deploy: [ 'dist/~' ]
+    deploy: [ dist, package.json ]
 
     # *optional*: which files / folders
     # to cache for the next use
     cache: [ node_modules ]
 
   # ==== how to run your application ====
-  # (usually no changes needed for a static server)
-  #run:
+  run:
     # *optional* install dependencies that your
     # runtime service requires (will be cached)
     # prepare:
@@ -48,3 +42,6 @@ nodejs0:
     # of your application, to eg. clean cache
     # init:
     #  - rm -rf ./cache
+
+    # how to start your application
+    start: npm start
