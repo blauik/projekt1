@@ -18,7 +18,7 @@ nodejs0:
     #   - curl otherthing
 
     # build your application
-    build:
+    busild:
       - npm i
       - npm run build
 
@@ -31,7 +31,7 @@ nodejs0:
     cache: [ node_modules ]
 
   # ==== how to run your application ====
-  run:
+  rsun:
     # *optional* install dependencies that your
     # runtime service requires (will be cached)
     # prepare:
