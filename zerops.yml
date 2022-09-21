@@ -1,7 +1,7 @@
 # hostname of your service
 # (supports monorepositories! just add
 # one service section after the other)
-nodejs0:
+nodejs2:
   # ==== how to build your application ====
   build:
     # select what technology should the
@@ -18,7 +18,7 @@ nodejs0:
     #   - curl otherthing
 
     # build your application
-    buisld:
+    build:
       - npm i
       - npm run build
 
